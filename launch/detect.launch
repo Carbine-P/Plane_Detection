@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="plane_detection" type="plane_detector_node.py" name="plane_detector" output="screen">
+        <param name="camera_json_path" value="/home/orin/PHT/PosDet/data/camera.json" />
+        <param name="model_path" value="/home/orin/PHT/yolo/runs/seg/train8/weights/best.pt" />
+        <!-- <param name="target_class" value="lid" /> -->
+        <param name="enable_visualization" value="True"/>
+        <!-- <env name="LD_LIBRARY_PATH" value="/usr/lib/aarch64-linux-gnu:/opt/ros/noetic/lib:${LD_LIBRARY_PATH}"/> -->
+    </node>
+</launch>

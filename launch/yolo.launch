@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="plane_detection" type="yolo_detector_node.py" name="yolo_detector" output="screen">
+        <env name="LD_LIBRARY_PATH" value="/home/ecnu/workspace/devel/lib:/opt/ros/noetic/lib"/>
+    </node>
+</launch>
